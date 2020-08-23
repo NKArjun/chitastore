@@ -1,0 +1,35 @@
+<header>
+    <div class="header">
+        <ul class="menu_items" [ngClass]="{'active':menuOpen}">
+            <li class="menu_item">
+                <a><i class="fas fa-user profile_icon"></i>My Profile</a>
+            </li>
+            <li class="menu_item">
+                <a><i class="fas fa-cog settings_icon"></i>Settings</a>
+            </li>
+            <li class="menu_item">
+                <a><i class="fas fa-align-left about about_icon"></i>About</a>
+            </li>
+            <li class="menu_item">
+                <a><i class="fas fa-headset contact contact_icon"></i>Contact</a>
+            </li>
+        </ul>
+        <i class="fa menu_icon" [ngClass]="{'fa-bars':!menuOpen,'fa-times':menuOpen}" (click)="menuOpen=!menuOpen"
+            aria-hidden="true"></i>
+        <div class="button-box">
+            <div id="btn" [ngClass]="{'toggle': toggle }"></div>
+            <button type="button" (click)="toggle = false" routerLink="new-order" class="toggle-btn new">New</button>
+            <button type="button" (click)="toggle = true;" routerLink="your-orders" class="toggle-btn">Your
+                Orders</button>
+        </div>
+        <i class="fa fa-bell bell_icon" aria-hidden="true"></i>
+    </div>
+</header>
+
+<div *ngIf="toggle" class="place-order" (click)="navigatenewOrder()">
+    <h4>Place Order<i class="fas fa-plus-circle"></i></h4>
+</div>
+
+<main [ngClass]="{'your-order':toggle}">
+    <router-outlet></router-outlet>
+</main>

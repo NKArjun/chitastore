@@ -1,0 +1,133 @@
+.header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #83d4da;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.menu_icon{
+    font-size: 30px;
+    color: rgba(128, 118, 118, 0.8);
+    cursor: pointer;
+
+}
+
+.menu_items{
+    position: fixed;
+    width: 60vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    top: 80px;
+    left: -70vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0 10px 10px 0;
+    transition: .5s;
+}
+
+.active{
+    left: 0;
+    transition: .5s;
+}
+
+.menu_item{
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu_item i{
+    margin-right: 10px;
+}
+
+.profile_icon{
+    color: #0abde3;
+}
+
+.settings_icon{
+}
+
+.about_icon{
+    color: #feca57;
+}
+
+.contact_icon{
+    color: #1dd1a1;
+}
+
+.button-box{
+    width: 240px;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+    position: relative;
+    background-color: hsl(220, 16%, 96%);
+}
+
+.toggle-btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+.new{
+    width: 110px;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right,#ff6f69,#d68c89);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+#btn.toggle{
+    left: 110px;
+    width: 140px;
+    transition: .5s;
+}
+
+.bell_icon{
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(251, 255, 5);
+}
+.place-order{
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    top: 80px;
+    left: 0;
+    cursor: pointer;
+    /* margin-bottom: 1rem; */
+    /* margin-bottom: 1rem; */
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.place-order i{
+    margin-left: 20px;
+}
+main{
+    padding: 100px 0;
+    background-color: hsl(220, 16%, 96%);
+    min-height: 100vh;
+}
+.your-order{
+    padding-top: 180px;
+}

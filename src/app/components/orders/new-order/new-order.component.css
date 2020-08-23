@@ -1,0 +1,53 @@
+.shop-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 300px;
+    grid-gap: 45px;
+    /* background-color: #f3f4f6; */
+}
+.shop-item{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    background-image: url('../../../../assets/images/shop3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+.status{
+    padding: 8px;
+    text-align: center;
+    width: 30%;
+    color: white;
+    border-radius: 0 25% 0 25%;
+    border-collapse: separate;
+    align-self: flex-end;
+}
+.open{
+    background: rgba(31, 253, 2, 0.8);
+}
+.closed{
+    background: rgba(236, 67, 67, 0.8);
+}
+.shop-details{
+    padding: 0 16px;
+    background: linear-gradient(to top,  rgb(43, 42, 42) 60% ,rgba(0,0,0,0));
+    color: white;
+    border-radius: 0 0 8% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.shop-details h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    color: rgb(195, 225, 236);
+}
